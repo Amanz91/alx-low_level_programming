@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - program to print numbers between zero and nine
+ * main - A C program to print a line with printf function
  * Return: 0 (Success)
-*/
+ */
 int main(void)
 {
 	int i;
@@ -11,6 +11,6 @@ int main(void)
 	{
 		putchar(i);
 	}
-putchar('\n')
+putchar('\n');
 return (0);
 }
