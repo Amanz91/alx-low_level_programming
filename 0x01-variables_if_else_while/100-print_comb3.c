@@ -12,7 +12,7 @@ int main(void)
 	{
 		for (I = 49; I <= 57; I++)
 		{
-			if (i > I)
+			if (I > i)
 			{
 				putchar(i);
 				putchar(I);
