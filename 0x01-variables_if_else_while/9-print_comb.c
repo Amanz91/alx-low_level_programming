@@ -19,7 +19,7 @@ int main(void)
 		}
 		else if (i == 9)
 		{
-			putchar(36);
+			putchar(' ');
 		}
 	}
 return (0);
