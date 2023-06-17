@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - program that prints all possible combinations of single-digit numbers
- * Retirn: 0 (Success)
+ *
+ * Return: 0 (Success)
 */
 
 int main(void)
@@ -18,7 +19,7 @@ int main(void)
 		}
 		else if (i == 9)
 		{
-			putchar('$');
+			putchar(36);
 		}
 	}
 return (0);
