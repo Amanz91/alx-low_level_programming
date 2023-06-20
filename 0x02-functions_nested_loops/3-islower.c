@@ -5,11 +5,11 @@
  */
 int _islower(int c)
 {
-	int c;
+	int r;
 	int i = 1;
 	int j = 0;
 
-	if (c = 'a'; c <= 'z'; c++)
+	if (r = 'a'; r <= 'z'; r++)
 	{
 	_putchar(i);
 	}
