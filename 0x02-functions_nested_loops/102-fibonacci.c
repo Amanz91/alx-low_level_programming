@@ -8,7 +8,7 @@ int main(void)
 	int a = 0;
 	long int b = 1, c = 2;
 
-	while (a == 0)
+	while (a < 50)
 	{
 		if (a == 0)
 			printf("%ld", b);
