@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_triangles - a function that draws a triangle with # in the terminal
+ * print_triangle - a function that draws a triangle with # in the terminal
  * @size: size of square
  * Return: void
  */
