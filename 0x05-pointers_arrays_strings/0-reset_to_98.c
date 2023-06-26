@@ -2,7 +2,9 @@
 /**
  * reset_to_98 - a function that takes a pointer to an int as parameter and
  * updates the value it points to to 98
- * @*n - value to reset
+ *
+ * @n: an intgeger pointer value to reset
+ *
  * Return: nothing
  */
 void reset_to_98(int *n)
