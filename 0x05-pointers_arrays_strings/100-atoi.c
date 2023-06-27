@@ -24,9 +24,10 @@ int _atoi(char *s)
 			if (b % 2)
 			{
 				f = -f;
+			}
 			c = c * 10 + f;
 			e = 1;
-			}
+
 			if (s[a + 1] < '0' || s[a + 1] > '9')
 				break;
 			e = 0;
