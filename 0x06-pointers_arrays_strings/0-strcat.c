@@ -3,7 +3,7 @@
  * _strcat - a function that concatenates two strings.
  * @dest: destination string
  * @src: source string
- * Return: dest
+ * Return: vod 
  */
 char *_strcat(char *dest, char *src)
 {
@@ -21,6 +21,6 @@ char *_strcat(char *dest, char *src)
 		lena++
 		lenb++
 	}
-	dest[] != '\0';
+	dest[lena] != '\0';
 return (dest);
 }
