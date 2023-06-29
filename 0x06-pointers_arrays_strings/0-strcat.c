@@ -21,6 +21,6 @@ char *_strcat(char *dest, char *src)
 		lena++
 		lenb++
 	}
-	dest[lena] != '\0';
+	dest[lena] = '\0';
 return (dest);
 }
