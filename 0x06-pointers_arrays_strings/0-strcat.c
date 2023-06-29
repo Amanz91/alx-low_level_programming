@@ -11,18 +11,15 @@ char *_strcat(char *dest, char *src)
 
 	while (dest[i] != '\0')
 	{
-		lena++;
-		i++;
+		lena++;		
 	}
 	while (src[i] != '\0')
 	{
 		lenb++;
-		i++;
 	}
 	for (i = 0; i <= lenb; i++)
 	{
 		dest[lena + 1] = src[i];
 	}
-	_putchar('\n')
 return (dest);
 }
