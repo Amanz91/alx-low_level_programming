@@ -7,26 +7,21 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int len1, len2, i;
+	int lena, lenb, i;
 
-	i = 0;
 	while (dest[i] != '\0')
 	{
-		len1++;
+		lena++;
 		i++;
 	}
-	i = 0;
-
 	while (src[i] != '\0')
 	{
-		len2++;
+		lenb++;
 		i++;
 	}
-	i = 0;
-
-	for (i = 0; i <= len2; i++)
+	for (i = 0; i <= lenb; i++)
 	{
-		dest[len1 + 1] = src[i];
+		dest[lena + 1] = src[i];
 	}
 	_putchar('\n')
 return (dest);
