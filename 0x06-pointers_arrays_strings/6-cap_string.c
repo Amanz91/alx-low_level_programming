@@ -6,12 +6,12 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0;
+	int index = 0;
 
-	while (str[i])
+	while (str[index])
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
-			i++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
 
 			if (str[index - 1] == ' ' || str[index - 1] == '\t' ||
 					str[index - 1] == '\n' ||
@@ -26,9 +26,9 @@ char *cap_string(char *str)
 					str[index - 1] == '{' ||
 					str[index - 1] == '}' || index == 0)
 			{
-				n[i] = n[i] - 32;
+				n[index] = n[index] - 32;
 			}
-			i++;
+			index++;
 	}
 	return (n);
 }
