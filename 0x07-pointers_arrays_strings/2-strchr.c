@@ -3,7 +3,7 @@
  * _strchr - a function that fills memory with a constant byte.
  * @s: pointer to string
  * @c: char to be located
- * Return: s or null
+ * Return: 0
  */
 char *_strchr(char *s, char c)
 {
