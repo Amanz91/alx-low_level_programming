@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - a function that sets the value of a pointer to a char 
+ * print_diagsums - a function that sets the value of a pointer to a char.
  * @a: string pointer
  * @size: input
  * Return: Always 0 (Success)
