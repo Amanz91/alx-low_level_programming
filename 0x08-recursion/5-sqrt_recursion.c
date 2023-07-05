@@ -1,4 +1,5 @@
 #include "main.h"
+int act_sqrt_recursion(int n, int i);
 /**
  * _sqrt_recursion - a function to returs the natural square root of a number
  * @n: number to be evaluated
