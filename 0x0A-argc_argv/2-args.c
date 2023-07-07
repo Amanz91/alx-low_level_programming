@@ -11,13 +11,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		if (i >= 1)
-		{
-			printf("%s\n", argv[i]);
-		}
-		else
-		{
-			printf("\n");
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
