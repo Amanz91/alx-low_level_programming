@@ -47,17 +47,16 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int i, m = 1;
+	int m;
 
 	if (argc == 3)
 	{
-		m = ((_atoi(argv[1]) * (_atoi(argv[2]);
+		m = ((_atoi(argv[1])) * (_atoi(argv[2])));
 		printf("%d\n", m);
-                }
-        }
-        else
-        {
-                printf("Error\n");
-        }
-        return (0);
+	}
+	else
+	{
+		printf("Error\n");
+	}
+	return (0);
 }
