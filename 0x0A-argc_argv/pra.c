@@ -1,12 +1,26 @@
 #include <stdio.h>
+#include "main.h"
 /**
- * main - program that prints its name, followed by a new line
+ * main - a program that multiplies two numbers.
  * @argc: argument count
  * @argv: array of argc
  * Return: 0
  */
-int main(int argc, __attribute__ ((unused))char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	int i, m = 1;
+
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			m = m * _atoi(argv[i]);
+			printf("%d\n", m);
+		}
+	}
+	else
+	{
+		printf("Error\n");
+	}
 	return (0);
 }
