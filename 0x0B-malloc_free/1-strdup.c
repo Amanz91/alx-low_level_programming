@@ -22,7 +22,7 @@ int _strlen(char *s)
  * @str: string to be copied
  * Return: pointer or NULL
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int size;
 	unsigned int i;
