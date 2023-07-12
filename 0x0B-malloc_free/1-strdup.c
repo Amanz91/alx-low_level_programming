@@ -25,7 +25,7 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	int size;
-	unsigned int i;
+	int i;
 	char *a;
 
 	size = _strlen(str);
