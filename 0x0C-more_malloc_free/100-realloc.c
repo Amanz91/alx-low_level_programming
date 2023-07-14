@@ -18,8 +18,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 	if (ptr != NULL && new_size == 0)
 	{
-		return (NULL);
 		free(ptr);
+		return (NULL);
 	}
 	if (ptr == NULL)
 	{
