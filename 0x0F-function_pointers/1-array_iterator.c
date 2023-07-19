@@ -1,10 +1,9 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * array_iterator - a fun. that executes a function given as a parameter on 
- * each element of an array
+ * array_iterator - a fun. that executes a function on elem of array
  * @array: name of array
- * size: size of array
+ * @size: size of array
  * @action: pointer to a function
  * Return: nothing
  */
