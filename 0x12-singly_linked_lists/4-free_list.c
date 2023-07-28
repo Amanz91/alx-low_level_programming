@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * free_list - a function that frees a list_t list.
  * @head: pointer to linked list
