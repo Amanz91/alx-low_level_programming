@@ -51,8 +51,8 @@ size_t print_list(const list_t *h)
 			_putchar('i');
 			_putchar('l');
 			_putchar(')');
-			count++;
-			break;
+			_putchar('\n');
+			count++;					
 		}
 		else
 		{
