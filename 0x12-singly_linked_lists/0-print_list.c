@@ -1,5 +1,20 @@
 #include "lists.h"
-#include <stdio>
+#include <stdio.h>
+#include <unistd.h>
+#include <unistd.h>
+int _putchar(char c);
+void print_num(unsigned int n);
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 /**
  * print_num -a function to print number
  * @n :numebr to be printed
@@ -48,12 +63,12 @@ size_t print_list(const list_t *h)
 			_putchar(' ');
 			for (i = 0; i < l; i++)
 			{
-				_putchar(h->str[i];
+				_putchar(h->str[i]);
 			}
 			_putchar('\n');
-			count++
+			count++;
 		}
 		h = h->next;
 	}
-	return(count);
+	return (count);
 }
