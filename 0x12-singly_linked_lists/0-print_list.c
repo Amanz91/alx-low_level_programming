@@ -52,7 +52,7 @@ size_t print_list(const list_t *h)
 			_putchar('l');
 			_putchar(')');
 			_putchar('\n');
-			count++;					
+			count++;
 		}
 		else
 		{
