@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_listint - a function that prints all the elements of a listint_t list
+ * listint_len - a function that counts all the elements of a listint_t list
  * @h: pointer to listint_t
  * Return: count
  */
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	const listint_t *temp;
 	size_t count = 0;
@@ -15,7 +15,6 @@ size_t print_listint(const listint_t *h)
 	while (temp != NULL)
 	{
 		count++;
-		printf("%d\n", temp->n);
 		temp = temp->next;
 	}
 	return (count);
