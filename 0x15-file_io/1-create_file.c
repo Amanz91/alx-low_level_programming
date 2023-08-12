@@ -1,27 +1,32 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * read_textfile - a function that reads a text file and prints it to the POSIX
- * standard output.
- * @filename: pointer to file to read from
- * @letters: number of letters to read
- * Return: 0 or w
+ * create_file - a function that creates a file.
+ * @filename: name of file to created
+ * @text_content: text to be added to file created
+ * Return: -1 or 1
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-	ssize_t fd, r, w;
-	char *b;
+	int fd, l, w;
 
-	fd = fopen(filename, O_RDONLY);
-	if (fd == -1)
+	l = 0;
+
+	if (filename == NULL)
 	{
-		return (0);
+		return (-1);
 	}
-	b = malloc(sizeof(char) * letters);
-	r = read(fd, b, letters);
-	w = write(STDOUT_FILENO, b, r);
+	while (text_content != NULL && text_content[l] != '\0')
+	{
+		l++
+	}
+	fd = fopen(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	w = write(filename, text_content, l);
 
-	free(b);
-	fclose(fd);
-	return (w);
+	if (fd == -1 || w == -1)
+	{
+		return (-1);
+	}
+	close(fd);
+	return (1);
 }
