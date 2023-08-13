@@ -26,7 +26,7 @@ void f_close(int f_name)
  * @argv: name of file
  * Return: nothing
  */
-void f_error(int file_from, file_to, char *argv[])
+void f_error(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
