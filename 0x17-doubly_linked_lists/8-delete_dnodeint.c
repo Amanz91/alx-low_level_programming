@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * int delete_dnodeint_at_index - a func that deletes nth node of a list
+ * delete_dnodeint_at_index - a func that deletes nth node of a list
  * @head: a double pointer to list
  * @index: index
  * Return: 1 or -1
